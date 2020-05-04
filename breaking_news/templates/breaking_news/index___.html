@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Breaking News</title>
+        <link rel="stylesheet" type="text/css" href="/static/breaking_news/css/base.css">
+        <link rel="stylesheet" type="text/css" href="/static/breaking_news/css/forms.css">
+        
+          <link rel="stylesheet" type="text/css" href="/static/breaking_news/css/responsive.css">
+          
+        <meta charset="utf-8" name="robots" content="NONE,NOARCHIVE">
+    
+      {% load static %}
+      </head>
+      <body>
+        <div id="header">
+          <div id="branding">
+            <h1 id="site-name"><a href="">
+                Notícias de Última Hora
+            </a></h1>
+          </div>
+          <div id="user-tools">
+              
+                  Welcome,
+                  <strong>User</strong>.
+                  
+                    <a href="">Vazio</a> /
+                  
+                  <a href="">Vazio</a> /
+                  
+          </div>
+        </div>
+    
+    <div>
+
+        {% for pub in posts %}
+
+                <a href="{{ pub.link }}">
+                    <h1>
+                        {{ pub.title }}
+                    </h1>
+                </a>
+
+            <img src="{{ pub.img }}" style="width:20%;" height="200">
+        
+        {% endfor %}
+    </div>
+    </div> <div class="HU_middleBar__container__center__currency"> <ul class="HU_currency"> <li class="HU_currency__item" aria-label="Cotação do Dólar: 5,438 reais, ir à página de economia" tabindex="0" role="button"> <a href="https://economia.uol.com.br/cotacoes/cambio/" aria-hidden="true" data-label="cambio-cotacoes"> <span class="HU_currency__label">Dólar</span><span class="HU_currency__quote HU_currency__quote-up">5,438</span> </a> </li> <li class="HU_currency__item" aria-label="Cotação do Euro: 6,021 reais, ir à página de economia" tabindex="0" role="button"> <a href="https://economia.uol.com.br/cotacoes/cambio/euro-uniao-europeia/" aria-hidden="true" data-label="cambio-cotacoes"> <span class="HU_currency__label">Euro</span><span class="HU_currency__quote HU_currency__quote-down">6,021</span> </a> </li> </ul> </div> <div class="HU_middleBar__container__center__weather"> <div class="HU_weather"> <div class="weather">     <a href="http://jornaldotempo.uol.com.br/previsaodotempo.html/brasil/Cascavel-PR" name="previsao-tempo" title="Previsão do tempo em : Céu claro, máxima 28 e mínima 18 graus" data-category="header" data-area="header" data-label="abrir-previsao-tempo" data-position="coluna-unica">
+        <span class="weather_icon" aria-hidden="true">
+                <i class="icons icons_weather-CC " aria-label="Céu claro" role="button" tabindex="0">
+            <svg><use xlink:href="#weather-CC"></use></svg>
+        
+    </i>
+</html>
